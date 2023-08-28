@@ -1,29 +1,16 @@
-import { useState } from "react"
+import { useState } from "react";
+import Header from "~components/Header";
+import Main from "~components/Main";
+import "./style.css"
 
-function IndexPopup() {
-  const [data, setData] = useState("")
+const IndexPopup:React.FC =()=> {
 
-  return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        padding: 16
-      }}>
-      <h2>
-        Welcome to your
-        <a href="https://www.plasmo.com" target="_blank">
-          {" "}
-          Plasmo
-        </a>{" "}
-        Extension!
-      </h2>
-      <input onChange={(e) => setData(e.target.value)} value={data} />
-      <a href="https://docs.plasmo.com" target="_blank">
-        View Docs
-      </a>
-    </div>
-  )
+	return (
+		<div className="w-[500px] h-[500px]">
+			<Header/>
+			<Main/>
+		</div>
+	)
 }
 
 export default IndexPopup
