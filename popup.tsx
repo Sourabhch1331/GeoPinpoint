@@ -6,7 +6,7 @@ import "./style.css"
 const IndexPopup:React.FC =()=> {
 
 	return (
-		<div className="w-[500px] h-[500px]">
+		<div className="w-[500px] h-[500px] bg-cyan-100">
 			<Header/>
 			<Main/>
 		</div>

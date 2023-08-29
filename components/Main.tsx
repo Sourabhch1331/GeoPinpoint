@@ -16,8 +16,6 @@ const Main:React.FC = ()  => {
     const [err,setErr] = useState<any>(null);
     
 
-//    console.log(err);
-
     // click handler 
     const getUserLocation = async()=> {
         setLoading(prev => true);
@@ -65,6 +63,8 @@ const Main:React.FC = ()  => {
                 :
                     locationInfo
                         && 
+                    !loading
+                        &&
                     <h2 className="text-xl font-semibold">
                         Your country is {locationInfo.country} and city is {locationInfo.city}.
                     </h2>
